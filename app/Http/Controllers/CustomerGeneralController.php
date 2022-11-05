@@ -208,6 +208,7 @@ class CustomerGeneralController extends Controller
         if(!$data){
             return redirect('/');
         }
+        return 1;
         return view('Customer.General.producthome',['data'=>$data]);
     }
     public function productcheck($name){
